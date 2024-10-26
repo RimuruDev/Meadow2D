@@ -1,4 +1,4 @@
 #!/bin/bash
-dir="/Users/rimurutempest/RimuruDev/UnityProjects/Internal/Meadow2D/Jenny"
+dir="/Users/rimurutempest/RimuruDev/UnityProjects/Internal/Meadow2D/Jenny/Jenny"
 cd $dir
-/usr/local/share/dotnet/dotnet "$dir/Jenny.Generator.Cli.dll" gen "$dir/JennyRoslyn.properties" -v
+/usr/local/share/dotnet/dotnet "$dir/Jenny.Generator.Cli.dll" gen "/Users/rimurutempest/RimuruDev/UnityProjects/Internal/Meadow2D/Jenny/JennyRoslyn.properties" -v
