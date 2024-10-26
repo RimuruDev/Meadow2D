@@ -9,18 +9,20 @@
 public static class GameComponentsLookup {
 
     public const int Hero = 0;
-    public const int Direction = 1;
-    public const int Moving = 2;
-    public const int Speed = 3;
-    public const int AxisInput = 4;
-    public const int Input = 5;
-    public const int Transform = 6;
-    public const int WorldPosition = 7;
+    public const int HeroAnimator = 1;
+    public const int Direction = 2;
+    public const int Moving = 3;
+    public const int Speed = 4;
+    public const int AxisInput = 5;
+    public const int Input = 6;
+    public const int Transform = 7;
+    public const int WorldPosition = 8;
 
-    public const int TotalComponents = 8;
+    public const int TotalComponents = 9;
 
     public static readonly string[] componentNames = {
         "Hero",
+        "HeroAnimator",
         "Direction",
         "Moving",
         "Speed",
@@ -32,6 +34,7 @@ public static class GameComponentsLookup {
 
     public static readonly System.Type[] componentTypes = {
         typeof(RimuruDev.Code.Gameplay.Features.Hero.Hero),
+        typeof(RimuruDev.Code.Gameplay.Features.Hero.HeroAnimatorComponent),
         typeof(RimuruDev.Code.Gameplay.Features.Movement.Direction),
         typeof(RimuruDev.Code.Gameplay.Features.Movement.Moving),
         typeof(RimuruDev.Code.Gameplay.Features.Movement.Speed),

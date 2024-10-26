@@ -4,7 +4,8 @@ namespace RimuruDev.Code.Gameplay.Features.Hero.System
     {
         public HeroFeature(GameContext gameContext)
         {
-            Add(new SetHeroDirectionByInput(gameContext));
+            Add(new SetHeroDirectionByInputSystem(gameContext));
+            Add(new AnimateHeroMovementSystem(gameContext));
         }
     }
 }

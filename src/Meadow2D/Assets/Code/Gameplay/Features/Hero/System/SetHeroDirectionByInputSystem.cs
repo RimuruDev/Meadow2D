@@ -3,12 +3,12 @@ using NotImplementedException = System.NotImplementedException;
 
 namespace RimuruDev.Code.Gameplay.Features.Hero.System
 {
-    public class SetHeroDirectionByInput : IExecuteSystem
+    public class SetHeroDirectionByInputSystem : IExecuteSystem
     {
         private readonly IGroup<GameEntity> heroes;
         private readonly IGroup<GameEntity> inputs;
 
-        public SetHeroDirectionByInput(GameContext gameContext)
+        public SetHeroDirectionByInputSystem(GameContext gameContext)
         {
             heroes = gameContext.GetGroup(GameMatcher.Hero);
             inputs = gameContext.GetGroup(GameMatcher.Input);
