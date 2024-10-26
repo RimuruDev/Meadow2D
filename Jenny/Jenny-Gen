@@ -1,4 +1,4 @@
 #!/bin/bash
-dir="$(cd $(dirname ${BASH_SOURCE[0]}) && pwd)"
+dir="/Users/rimurutempest/RimuruDev/UnityProjects/Internal/Meadow2D/Jenny"
 cd $dir
-dotnet ./Jenny.Generator.Cli.dll gen JennyRoslyn.properties -v
+/usr/local/share/dotnet/dotnet "$dir/Jenny.Generator.Cli.dll" gen "$dir/JennyRoslyn.properties" -v
