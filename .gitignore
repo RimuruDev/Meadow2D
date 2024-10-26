@@ -79,3 +79,4 @@ crashlytics-build.properties
 /src/Meadow2D/UserSettings
 /src/Meadow2D/Logs
 /src/Meadow2D/.idea
+/src/Meadow2D/obj
