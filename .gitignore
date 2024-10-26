@@ -74,3 +74,7 @@ crashlytics-build.properties
 /Meadow2D/UserSettings
 /Meadow2D/Temp
 /Meadow2D/Logs
+/src/Meadow2D/Library
+/src/Meadow2D/Temp
+/src/Meadow2D/UserSettings
+/src/Meadow2D/Logs
