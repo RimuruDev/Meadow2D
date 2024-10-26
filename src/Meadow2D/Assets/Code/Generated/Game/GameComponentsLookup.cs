@@ -11,14 +11,18 @@ public static class GameComponentsLookup {
     public const int Direction = 0;
     public const int Moving = 1;
     public const int Speed = 2;
-    public const int WorldPosition = 3;
+    public const int AxisInput = 3;
+    public const int Input = 4;
+    public const int WorldPosition = 5;
 
-    public const int TotalComponents = 4;
+    public const int TotalComponents = 6;
 
     public static readonly string[] componentNames = {
         "Direction",
         "Moving",
         "Speed",
+        "AxisInput",
+        "Input",
         "WorldPosition"
     };
 
@@ -26,6 +30,8 @@ public static class GameComponentsLookup {
         typeof(RimuruDev.Code.Gameplay.Features.Movement.Direction),
         typeof(RimuruDev.Code.Gameplay.Features.Movement.Moving),
         typeof(RimuruDev.Code.Gameplay.Features.Movement.Speed),
+        typeof(RimuruDev.Code.Gameplay.Input.AxisInput),
+        typeof(RimuruDev.Code.Gameplay.Input.Input),
         typeof(RimuruDev.Code.Gameplay.WorldPosition)
     };
 }

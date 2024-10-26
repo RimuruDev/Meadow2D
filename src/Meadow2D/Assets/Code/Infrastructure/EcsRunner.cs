@@ -2,6 +2,7 @@ using Zenject;
 using UnityEngine;
 using RimuruDev.Code.Gameplay;
 using Code.Gameplay.Common.Time;
+using Code.Gameplay.Input.Service;
 
 namespace Code.Infrastructure
 {
@@ -11,17 +12,19 @@ namespace Code.Infrastructure
         private ITimeService timeService;
 
         private BattleFeature battleFeature;
+        private IInputService inputService;
 
         [Inject]
-        private void Constructor(GameContext context, ITimeService service)
+        private void Constructor(GameContext context, ITimeService service, IInputService inputService)
         {
+            this.inputService = inputService;
             gameContext = context;
             timeService = service;
         }
 
         private void Start()
         {
-            battleFeature = new BattleFeature(gameContext, timeService);
+            battleFeature = new BattleFeature(gameContext, timeService, inputService);
             battleFeature.Initialize();
         }
 
