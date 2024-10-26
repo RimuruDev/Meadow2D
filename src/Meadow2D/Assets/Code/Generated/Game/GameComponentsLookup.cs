@@ -15,10 +15,11 @@ public static class GameComponentsLookup {
     public const int Speed = 4;
     public const int AxisInput = 5;
     public const int Input = 6;
-    public const int Transform = 7;
-    public const int WorldPosition = 8;
+    public const int SpriteRenderer = 7;
+    public const int Transform = 8;
+    public const int WorldPosition = 9;
 
-    public const int TotalComponents = 9;
+    public const int TotalComponents = 10;
 
     public static readonly string[] componentNames = {
         "Hero",
@@ -28,6 +29,7 @@ public static class GameComponentsLookup {
         "Speed",
         "AxisInput",
         "Input",
+        "SpriteRenderer",
         "Transform",
         "WorldPosition"
     };
@@ -40,6 +42,7 @@ public static class GameComponentsLookup {
         typeof(RimuruDev.Code.Gameplay.Features.Movement.Speed),
         typeof(RimuruDev.Code.Gameplay.Input.AxisInput),
         typeof(RimuruDev.Code.Gameplay.Input.Input),
+        typeof(RimuruDev.Code.Gameplay.SpriteRendererComponent),
         typeof(RimuruDev.Code.Gameplay.TransformComponent),
         typeof(RimuruDev.Code.Gameplay.WorldPosition)
     };

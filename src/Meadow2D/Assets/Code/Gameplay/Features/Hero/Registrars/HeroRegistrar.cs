@@ -23,6 +23,7 @@ namespace RimuruDev.Code.Gameplay.Features.Hero.Registrars
                     .AddDirection(Vector2.zero)
                     .AddSpeed(Speed)
                     .With(x => x.isHero = true)
+                    .AddSpriteRenderer(HeroAnimator.SpriteRenderer)
                 ;
         }
     }
