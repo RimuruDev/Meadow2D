@@ -8,15 +8,18 @@
 //------------------------------------------------------------------------------
 public static class GameComponentsLookup {
 
-    public const int WorldPosition = 0;
+    public const int Speed = 0;
+    public const int WorldPosition = 1;
 
-    public const int TotalComponents = 1;
+    public const int TotalComponents = 2;
 
     public static readonly string[] componentNames = {
+        "Speed",
         "WorldPosition"
     };
 
     public static readonly System.Type[] componentTypes = {
+        typeof(RimuruDev.Code.Gameplay.Features.Movement.Speed),
         typeof(RimuruDev.Code.Gameplay.WorldPosition)
     };
 }
