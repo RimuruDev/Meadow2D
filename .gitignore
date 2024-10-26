@@ -70,3 +70,7 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+/Meadow2D/Library
+/Meadow2D/UserSettings
+/Meadow2D/Temp
+/Meadow2D/Logs
